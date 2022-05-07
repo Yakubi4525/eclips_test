@@ -46,7 +46,7 @@ class SliderItem extends StatelessWidget {
           Positioned(
             bottom: 16.0,
             child: Container(
-              padding: EdgeInsets.only(left: 16.0, right: 16.0),
+              padding: const EdgeInsets.only(left: 16.0, right: 16.0),
               width: 250.0,
               child: Column(
                 children: <Widget>[

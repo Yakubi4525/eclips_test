@@ -3,8 +3,6 @@ import 'package:user_app/core/theme/color_theme.dart';
 import 'package:user_app/features/user_list/domain/entetties/album.dart';
 import 'package:user_app/features/user_list/domain/entetties/post.dart';
 import 'package:user_app/features/user_list/domain/entetties/user.dart';
-import 'package:user_app/features/user_list/ui/character_album_screen/pages/character_album_screen.dart';
-import 'package:user_app/features/user_list/ui/character_post_screen/pages/character_post_screen.dart';
 import 'package:user_app/features/user_list/ui/character_user_screen/pages/character_user_screen.dart';
 import 'package:user_app/features/user_list/ui/user_albums_screen/pages/user_albums.dart';
 import 'package:user_app/features/user_list/ui/user_posts_screen/pages/user_posts.dart';

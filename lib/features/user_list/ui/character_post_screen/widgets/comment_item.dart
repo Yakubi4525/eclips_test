@@ -1,15 +1,14 @@
+// ignore_for_file: use_key_in_widget_constructors
+
 import 'package:flutter/material.dart';
 import 'package:user_app/core/theme/color_theme.dart';
 import 'package:user_app/core/theme/text_theme.dart';
 import 'package:user_app/features/user_list/domain/entetties/comment.dart';
 
-
 class CommentItem extends StatelessWidget {
   final Comment comment;
-  
 
-  const CommentItem({required this.comment});
-
+  const CommentItem({Key? key, required this.comment});
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -26,34 +25,27 @@ class CommentItem extends StatelessWidget {
             ),
           ),
           child: Padding(
-            
             padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
-                  child: Text(
-                    comment.email!,
-                    style: TextThemes.simpleTextStyle,
-                    overflow: TextOverflow.ellipsis,
-                    maxLines: 1,
-                  ),
+                Text(
+                  comment.email!,
+                  style: TextThemes.simpleTextStyle,
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 1,
                 ),
-                Container(
-                  child: Text(
-                    comment.name!,
-                    style: TextThemes.headline3,
-                    overflow: TextOverflow.ellipsis,
-                    maxLines: 1,
-                  ),
+                Text(
+                  comment.name!,
+                  style: TextThemes.headline3,
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 1,
                 ),
-                Container(
-                  child: Text(
-                    comment.body!,
-                    style: TextThemes.headline2,
-                    // overflow: TextOverflow.ellipsis,
-                    // maxLines: 1,
-                  ),
+                Text(
+                  comment.body!,
+                  style: TextThemes.headline2,
+                  // overflow: TextOverflow.ellipsis,
+                  // maxLines: 1,
                 ),
               ],
             ),

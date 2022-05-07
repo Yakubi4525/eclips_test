@@ -24,15 +24,15 @@ class User {
     username = json['username'];
     email = json['email'];
     address =
-        json['address'] != null ? new Address.fromJson(json['address']) : null;
+        json['address'] != null ? Address.fromJson(json['address']) : null;
     phone = json['phone'];
     website = json['website'];
     company =
-        json['company'] != null ? new Company.fromJson(json['company']) : null;
+        json['company'] != null ? Company.fromJson(json['company']) : null;
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
+    final Map<String, dynamic> data = <String, dynamic>{};
     data['id'] = id;
     data['name'] = name;
     data['username'] = username;
@@ -67,7 +67,7 @@ class Address {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
+    final Map<String, dynamic> data = <String, dynamic>{};
     data['street'] = street;
     data['suite'] = suite;
     data['city'] = city;
@@ -91,7 +91,7 @@ class Geo {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
+    final Map<String, dynamic> data = <String, dynamic>{};
     data['lat'] = lat;
     data['lng'] = lng;
     return data;

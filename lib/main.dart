@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
 import 'package:user_app/core/routers/app_router.dart';
 import 'package:user_app/core/theme/main_theme.dart';
-import 'package:user_app/features/user_list/ui/users_screen/pages/users_screen.dart';
 import 'package:user_app/injection.dart';
 
 void main() async {
