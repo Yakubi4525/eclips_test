@@ -248,8 +248,8 @@ class CharacterPostScreen extends StatelessWidget {
       body: _messageController.text,
       id: commentsCount + 1,
     );
-    context
-        .read<CharacterPostBloc>()
-        .add(CharacterPostEvent.addComment(comment: comment!));
+    context.read<CharacterPostBloc>().add(
+          CharacterPostEvent.addComment(comment: comment!,),
+        );
   }
 }
