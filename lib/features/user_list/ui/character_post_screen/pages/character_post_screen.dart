@@ -31,7 +31,7 @@ class CharacterPostScreen extends StatelessWidget {
     // required this.comment,
   }) : super(key: key);
   @override
-  Widget build(BuildContext pageContext) {
+  Widget build(BuildContext context) {
     ScrollController scrollController = ScrollController();
     return BlocProvider(
       create: (context) => getIt<CharacterPostBloc>()
@@ -235,7 +235,6 @@ class CharacterPostScreen extends StatelessWidget {
   }
 
   void addComment({required int commentsCount, required BuildContext context}) {
-    print('name ${_nameController.text}');
     bool _first = keys1.currentState!.validate();
     bool _second = keys2.currentState!.validate();
     bool _third = keys3.currentState!.validate();
