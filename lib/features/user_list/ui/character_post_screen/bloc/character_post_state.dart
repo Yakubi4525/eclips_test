@@ -1,9 +1,21 @@
-// part of 'character_post_bloc.dart';
+part of 'character_post_bloc.dart';
 
-// @freezed
-// abstract class CharacterPostState with _$CharacterPostState {
-//   const factory CharacterPostState.initial() = _InitialState;
-//   const factory CharacterPostState.loading() = _LoadingState;
-//   const factory CharacterPostState.error({@required String errorMessage}) = _ErrorState;
-//   const factory CharacterPostState.data({@required List<Comment> commentList}) = _DataState;
-// }
+
+
+@freezed
+class CharacterPostState with _$CharacterPostState {
+  const factory CharacterPostState({
+    required final bool isSubmitting,
+    required final bool noInternet,
+    required final bool isOk,
+    required final bool serverError,
+    required final List<Comment> comments,
+  }) = _CharacterPostState;
+  factory CharacterPostState.initial() => const CharacterPostState(
+        isSubmitting: false,
+        comments: [],
+        serverError: false,
+        noInternet: false,
+        isOk: true,
+      );
+}

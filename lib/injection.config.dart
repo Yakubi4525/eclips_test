@@ -8,7 +8,7 @@ import 'package:dio/dio.dart' as _i3;
 import 'package:get_it/get_it.dart' as _i1;
 import 'package:injectable/injectable.dart' as _i2;
 
-import 'core/injectable_helpers/injectable_modules.dart' as _i14;
+import 'core/injectable_helpers/injectable_modules.dart' as _i15;
 import 'core/network_check/network_info.dart' as _i6;
 import 'core/network_check/netwwork_info_impl.dart' as _i7;
 import 'features/user_list/data/datasources/local/local_service.dart' as _i4;
@@ -20,8 +20,10 @@ import 'features/user_list/data/datasources/network/sources/service_api_impl.dar
     as _i9;
 import 'features/user_list/data/repositories/repository.dart' as _i11;
 import 'features/user_list/domain/reositories/data_repository.dart' as _i10;
-import 'features/user_list/ui/character_user_screen/bloc/character_user_bloc.dart'
+import 'features/user_list/ui/character_post_screen/bloc/character_post_bloc.dart'
     as _i13;
+import 'features/user_list/ui/character_user_screen/bloc/character_user_bloc.dart'
+    as _i14;
 import 'features/user_list/ui/users_screen/bloc/users_screen_bloc.dart'
     as _i12; // ignore_for_file: unnecessary_lambdas
 
@@ -41,9 +43,11 @@ _i1.GetIt $initGetIt(_i1.GetIt get,
       networkInfo: get<_i6.NetworkInfo>()));
   gh.factory<_i12.UsersScreenBloc>(
       () => _i12.UsersScreenBloc(get<_i10.DataRepository>()));
-  gh.factory<_i13.CharacterUserBloc>(
-      () => _i13.CharacterUserBloc(get<_i10.DataRepository>()));
+  gh.factory<_i13.CharacterPostBloc>(
+      () => _i13.CharacterPostBloc(get<_i10.DataRepository>()));
+  gh.factory<_i14.CharacterUserBloc>(
+      () => _i14.CharacterUserBloc(get<_i10.DataRepository>()));
   return get;
 }
 
-class _$InjectableModule extends _i14.InjectableModule {}
+class _$InjectableModule extends _i15.InjectableModule {}

@@ -1,862 +1,592 @@
-// // GENERATED CODE - DO NOT MODIFY BY HAND
-// // ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
-
-// part of 'character_post_bloc.dart';
-
-// // **************************************************************************
-// // FreezedGenerator
-// // **************************************************************************
-
-// T _$identity<T>(T value) => value;
-
-// /// @nodoc
-// class _$CharacterPostEventTearOff {
-//   const _$CharacterPostEventTearOff();
-
-// // ignore: unused_element
-//   _Started started({int postId}) {
-//     return _Started(
-//       postId: postId,
-//     );
-//   }
-
-// // ignore: unused_element
-//   _Comment addComment({Comment comment}) {
-//     return _Comment(
-//       comment: comment,
-//     );
-//   }
-// }
-
-// /// @nodoc
-// // ignore: unused_element
-// const $CharacterPostEvent = _$CharacterPostEventTearOff();
-
-// /// @nodoc
-// mixin _$CharacterPostEvent {
-//   @optionalTypeArgs
-//   TResult when<TResult extends Object>({
-//     @required TResult started(int postId),
-//     @required TResult addComment(Comment comment),
-//   });
-//   @optionalTypeArgs
-//   TResult maybeWhen<TResult extends Object>({
-//     TResult started(int postId),
-//     TResult addComment(Comment comment),
-//     @required TResult orElse(),
-//   });
-//   @optionalTypeArgs
-//   TResult map<TResult extends Object>({
-//     @required TResult started(_Started value),
-//     @required TResult addComment(_Comment value),
-//   });
-//   @optionalTypeArgs
-//   TResult maybeMap<TResult extends Object>({
-//     TResult started(_Started value),
-//     TResult addComment(_Comment value),
-//     @required TResult orElse(),
-//   });
-// }
-
-// /// @nodoc
-// abstract class $CharacterPostEventCopyWith<$Res> {
-//   factory $CharacterPostEventCopyWith(
-//           CharacterPostEvent value, $Res Function(CharacterPostEvent) then) =
-//       _$CharacterPostEventCopyWithImpl<$Res>;
-// }
-
-// /// @nodoc
-// class _$CharacterPostEventCopyWithImpl<$Res>
-//     implements $CharacterPostEventCopyWith<$Res> {
-//   _$CharacterPostEventCopyWithImpl(this._value, this._then);
-
-//   final CharacterPostEvent _value;
-//   // ignore: unused_field
-//   final $Res Function(CharacterPostEvent) _then;
-// }
-
-// /// @nodoc
-// abstract class _$StartedCopyWith<$Res> {
-//   factory _$StartedCopyWith(_Started value, $Res Function(_Started) then) =
-//       __$StartedCopyWithImpl<$Res>;
-//   $Res call({int postId});
-// }
-
-// /// @nodoc
-// class __$StartedCopyWithImpl<$Res>
-//     extends _$CharacterPostEventCopyWithImpl<$Res>
-//     implements _$StartedCopyWith<$Res> {
-//   __$StartedCopyWithImpl(_Started _value, $Res Function(_Started) _then)
-//       : super(_value, (v) => _then(v as _Started));
-
-//   @override
-//   _Started get _value => super._value as _Started;
-
-//   @override
-//   $Res call({
-//     Object postId = freezed,
-//   }) {
-//     return _then(_Started(
-//       postId: postId == freezed ? _value.postId : postId as int,
-//     ));
-//   }
-// }
-
-// /// @nodoc
-// class _$_Started implements _Started {
-//   const _$_Started({this.postId});
-
-//   @override
-//   final int postId;
-
-//   @override
-//   String toString() {
-//     return 'CharacterPostEvent.started(postId: $postId)';
-//   }
-
-//   @override
-//   bool operator ==(dynamic other) {
-//     return identical(this, other) ||
-//         (other is _Started &&
-//             (identical(other.postId, postId) ||
-//                 const DeepCollectionEquality().equals(other.postId, postId)));
-//   }
-
-//   @override
-//   int get hashCode =>
-//       runtimeType.hashCode ^ const DeepCollectionEquality().hash(postId);
-
-//   @JsonKey(ignore: true)
-//   @override
-//   _$StartedCopyWith<_Started> get copyWith =>
-//       __$StartedCopyWithImpl<_Started>(this, _$identity);
-
-//   @override
-//   @optionalTypeArgs
-//   TResult when<TResult extends Object>({
-//     @required TResult started(int postId),
-//     @required TResult addComment(Comment comment),
-//   }) {
-//     assert(started != null);
-//     assert(addComment != null);
-//     return started(postId);
-//   }
-
-//   @override
-//   @optionalTypeArgs
-//   TResult maybeWhen<TResult extends Object>({
-//     TResult started(int postId),
-//     TResult addComment(Comment comment),
-//     @required TResult orElse(),
-//   }) {
-//     assert(orElse != null);
-//     if (started != null) {
-//       return started(postId);
-//     }
-//     return orElse();
-//   }
-
-//   @override
-//   @optionalTypeArgs
-//   TResult map<TResult extends Object>({
-//     @required TResult started(_Started value),
-//     @required TResult addComment(_Comment value),
-//   }) {
-//     assert(started != null);
-//     assert(addComment != null);
-//     return started(this);
-//   }
-
-//   @override
-//   @optionalTypeArgs
-//   TResult maybeMap<TResult extends Object>({
-//     TResult started(_Started value),
-//     TResult addComment(_Comment value),
-//     @required TResult orElse(),
-//   }) {
-//     assert(orElse != null);
-//     if (started != null) {
-//       return started(this);
-//     }
-//     return orElse();
-//   }
-// }
-
-// abstract class _Started implements CharacterPostEvent {
-//   const factory _Started({int postId}) = _$_Started;
-
-//   int get postId;
-//   @JsonKey(ignore: true)
-//   _$StartedCopyWith<_Started> get copyWith;
-// }
-
-// /// @nodoc
-// abstract class _$CommentCopyWith<$Res> {
-//   factory _$CommentCopyWith(_Comment value, $Res Function(_Comment) then) =
-//       __$CommentCopyWithImpl<$Res>;
-//   $Res call({Comment comment});
-// }
-
-// /// @nodoc
-// class __$CommentCopyWithImpl<$Res>
-//     extends _$CharacterPostEventCopyWithImpl<$Res>
-//     implements _$CommentCopyWith<$Res> {
-//   __$CommentCopyWithImpl(_Comment _value, $Res Function(_Comment) _then)
-//       : super(_value, (v) => _then(v as _Comment));
-
-//   @override
-//   _Comment get _value => super._value as _Comment;
-
-//   @override
-//   $Res call({
-//     Object comment = freezed,
-//   }) {
-//     return _then(_Comment(
-//       comment: comment == freezed ? _value.comment : comment as Comment,
-//     ));
-//   }
-// }
-
-// /// @nodoc
-// class _$_Comment implements _Comment {
-//   const _$_Comment({this.comment});
-
-//   @override
-//   final Comment comment;
-
-//   @override
-//   String toString() {
-//     return 'CharacterPostEvent.addComment(comment: $comment)';
-//   }
-
-//   @override
-//   bool operator ==(dynamic other) {
-//     return identical(this, other) ||
-//         (other is _Comment &&
-//             (identical(other.comment, comment) ||
-//                 const DeepCollectionEquality().equals(other.comment, comment)));
-//   }
-
-//   @override
-//   int get hashCode =>
-//       runtimeType.hashCode ^ const DeepCollectionEquality().hash(comment);
-
-//   @JsonKey(ignore: true)
-//   @override
-//   _$CommentCopyWith<_Comment> get copyWith =>
-//       __$CommentCopyWithImpl<_Comment>(this, _$identity);
-
-//   @override
-//   @optionalTypeArgs
-//   TResult when<TResult extends Object>({
-//     @required TResult started(int postId),
-//     @required TResult addComment(Comment comment),
-//   }) {
-//     assert(started != null);
-//     assert(addComment != null);
-//     return addComment(comment);
-//   }
-
-//   @override
-//   @optionalTypeArgs
-//   TResult maybeWhen<TResult extends Object>({
-//     TResult started(int postId),
-//     TResult addComment(Comment comment),
-//     @required TResult orElse(),
-//   }) {
-//     assert(orElse != null);
-//     if (addComment != null) {
-//       return addComment(comment);
-//     }
-//     return orElse();
-//   }
-
-//   @override
-//   @optionalTypeArgs
-//   TResult map<TResult extends Object>({
-//     @required TResult started(_Started value),
-//     @required TResult addComment(_Comment value),
-//   }) {
-//     assert(started != null);
-//     assert(addComment != null);
-//     return addComment(this);
-//   }
-
-//   @override
-//   @optionalTypeArgs
-//   TResult maybeMap<TResult extends Object>({
-//     TResult started(_Started value),
-//     TResult addComment(_Comment value),
-//     @required TResult orElse(),
-//   }) {
-//     assert(orElse != null);
-//     if (addComment != null) {
-//       return addComment(this);
-//     }
-//     return orElse();
-//   }
-// }
-
-// abstract class _Comment implements CharacterPostEvent {
-//   const factory _Comment({Comment comment}) = _$_Comment;
-
-//   Comment get comment;
-//   @JsonKey(ignore: true)
-//   _$CommentCopyWith<_Comment> get copyWith;
-// }
-
-// /// @nodoc
-// class _$CharacterPostStateTearOff {
-//   const _$CharacterPostStateTearOff();
-
-// // ignore: unused_element
-//   _InitialState initial() {
-//     return const _InitialState();
-//   }
-
-// // ignore: unused_element
-//   _LoadingState loading() {
-//     return const _LoadingState();
-//   }
-
-// // ignore: unused_element
-//   _ErrorState error({@required String errorMessage}) {
-//     return _ErrorState(
-//       errorMessage: errorMessage,
-//     );
-//   }
-
-// // ignore: unused_element
-//   _DataState data({@required List<Comment> commentList}) {
-//     return _DataState(
-//       commentList: commentList,
-//     );
-//   }
-// }
-
-// /// @nodoc
-// // ignore: unused_element
-// const $CharacterPostState = _$CharacterPostStateTearOff();
-
-// /// @nodoc
-// mixin _$CharacterPostState {
-//   @optionalTypeArgs
-//   TResult when<TResult extends Object>({
-//     @required TResult initial(),
-//     @required TResult loading(),
-//     @required TResult error(String errorMessage),
-//     @required TResult data(List<Comment> commentList),
-//   });
-//   @optionalTypeArgs
-//   TResult maybeWhen<TResult extends Object>({
-//     TResult initial(),
-//     TResult loading(),
-//     TResult error(String errorMessage),
-//     TResult data(List<Comment> commentList),
-//     @required TResult orElse(),
-//   });
-//   @optionalTypeArgs
-//   TResult map<TResult extends Object>({
-//     @required TResult initial(_InitialState value),
-//     @required TResult loading(_LoadingState value),
-//     @required TResult error(_ErrorState value),
-//     @required TResult data(_DataState value),
-//   });
-//   @optionalTypeArgs
-//   TResult maybeMap<TResult extends Object>({
-//     TResult initial(_InitialState value),
-//     TResult loading(_LoadingState value),
-//     TResult error(_ErrorState value),
-//     TResult data(_DataState value),
-//     @required TResult orElse(),
-//   });
-// }
-
-// /// @nodoc
-// abstract class $CharacterPostStateCopyWith<$Res> {
-//   factory $CharacterPostStateCopyWith(
-//           CharacterPostState value, $Res Function(CharacterPostState) then) =
-//       _$CharacterPostStateCopyWithImpl<$Res>;
-// }
-
-// /// @nodoc
-// class _$CharacterPostStateCopyWithImpl<$Res>
-//     implements $CharacterPostStateCopyWith<$Res> {
-//   _$CharacterPostStateCopyWithImpl(this._value, this._then);
-
-//   final CharacterPostState _value;
-//   // ignore: unused_field
-//   final $Res Function(CharacterPostState) _then;
-// }
-
-// /// @nodoc
-// abstract class _$InitialStateCopyWith<$Res> {
-//   factory _$InitialStateCopyWith(
-//           _InitialState value, $Res Function(_InitialState) then) =
-//       __$InitialStateCopyWithImpl<$Res>;
-// }
-
-// /// @nodoc
-// class __$InitialStateCopyWithImpl<$Res>
-//     extends _$CharacterPostStateCopyWithImpl<$Res>
-//     implements _$InitialStateCopyWith<$Res> {
-//   __$InitialStateCopyWithImpl(
-//       _InitialState _value, $Res Function(_InitialState) _then)
-//       : super(_value, (v) => _then(v as _InitialState));
-
-//   @override
-//   _InitialState get _value => super._value as _InitialState;
-// }
-
-// /// @nodoc
-// class _$_InitialState implements _InitialState {
-//   const _$_InitialState();
-
-//   @override
-//   String toString() {
-//     return 'CharacterPostState.initial()';
-//   }
-
-//   @override
-//   bool operator ==(dynamic other) {
-//     return identical(this, other) || (other is _InitialState);
-//   }
-
-//   @override
-//   int get hashCode => runtimeType.hashCode;
-
-//   @override
-//   @optionalTypeArgs
-//   TResult when<TResult extends Object>({
-//     @required TResult initial(),
-//     @required TResult loading(),
-//     @required TResult error(String errorMessage),
-//     @required TResult data(List<Comment> commentList),
-//   }) {
-//     assert(initial != null);
-//     assert(loading != null);
-//     assert(error != null);
-//     assert(data != null);
-//     return initial();
-//   }
-
-//   @override
-//   @optionalTypeArgs
-//   TResult maybeWhen<TResult extends Object>({
-//     TResult initial(),
-//     TResult loading(),
-//     TResult error(String errorMessage),
-//     TResult data(List<Comment> commentList),
-//     @required TResult orElse(),
-//   }) {
-//     assert(orElse != null);
-//     if (initial != null) {
-//       return initial();
-//     }
-//     return orElse();
-//   }
-
-//   @override
-//   @optionalTypeArgs
-//   TResult map<TResult extends Object>({
-//     @required TResult initial(_InitialState value),
-//     @required TResult loading(_LoadingState value),
-//     @required TResult error(_ErrorState value),
-//     @required TResult data(_DataState value),
-//   }) {
-//     assert(initial != null);
-//     assert(loading != null);
-//     assert(error != null);
-//     assert(data != null);
-//     return initial(this);
-//   }
-
-//   @override
-//   @optionalTypeArgs
-//   TResult maybeMap<TResult extends Object>({
-//     TResult initial(_InitialState value),
-//     TResult loading(_LoadingState value),
-//     TResult error(_ErrorState value),
-//     TResult data(_DataState value),
-//     @required TResult orElse(),
-//   }) {
-//     assert(orElse != null);
-//     if (initial != null) {
-//       return initial(this);
-//     }
-//     return orElse();
-//   }
-// }
-
-// abstract class _InitialState implements CharacterPostState {
-//   const factory _InitialState() = _$_InitialState;
-// }
-
-// /// @nodoc
-// abstract class _$LoadingStateCopyWith<$Res> {
-//   factory _$LoadingStateCopyWith(
-//           _LoadingState value, $Res Function(_LoadingState) then) =
-//       __$LoadingStateCopyWithImpl<$Res>;
-// }
-
-// /// @nodoc
-// class __$LoadingStateCopyWithImpl<$Res>
-//     extends _$CharacterPostStateCopyWithImpl<$Res>
-//     implements _$LoadingStateCopyWith<$Res> {
-//   __$LoadingStateCopyWithImpl(
-//       _LoadingState _value, $Res Function(_LoadingState) _then)
-//       : super(_value, (v) => _then(v as _LoadingState));
-
-//   @override
-//   _LoadingState get _value => super._value as _LoadingState;
-// }
-
-// /// @nodoc
-// class _$_LoadingState implements _LoadingState {
-//   const _$_LoadingState();
-
-//   @override
-//   String toString() {
-//     return 'CharacterPostState.loading()';
-//   }
-
-//   @override
-//   bool operator ==(dynamic other) {
-//     return identical(this, other) || (other is _LoadingState);
-//   }
-
-//   @override
-//   int get hashCode => runtimeType.hashCode;
-
-//   @override
-//   @optionalTypeArgs
-//   TResult when<TResult extends Object>({
-//     @required TResult initial(),
-//     @required TResult loading(),
-//     @required TResult error(String errorMessage),
-//     @required TResult data(List<Comment> commentList),
-//   }) {
-//     assert(initial != null);
-//     assert(loading != null);
-//     assert(error != null);
-//     assert(data != null);
-//     return loading();
-//   }
-
-//   @override
-//   @optionalTypeArgs
-//   TResult maybeWhen<TResult extends Object>({
-//     TResult initial(),
-//     TResult loading(),
-//     TResult error(String errorMessage),
-//     TResult data(List<Comment> commentList),
-//     @required TResult orElse(),
-//   }) {
-//     assert(orElse != null);
-//     if (loading != null) {
-//       return loading();
-//     }
-//     return orElse();
-//   }
-
-//   @override
-//   @optionalTypeArgs
-//   TResult map<TResult extends Object>({
-//     @required TResult initial(_InitialState value),
-//     @required TResult loading(_LoadingState value),
-//     @required TResult error(_ErrorState value),
-//     @required TResult data(_DataState value),
-//   }) {
-//     assert(initial != null);
-//     assert(loading != null);
-//     assert(error != null);
-//     assert(data != null);
-//     return loading(this);
-//   }
-
-//   @override
-//   @optionalTypeArgs
-//   TResult maybeMap<TResult extends Object>({
-//     TResult initial(_InitialState value),
-//     TResult loading(_LoadingState value),
-//     TResult error(_ErrorState value),
-//     TResult data(_DataState value),
-//     @required TResult orElse(),
-//   }) {
-//     assert(orElse != null);
-//     if (loading != null) {
-//       return loading(this);
-//     }
-//     return orElse();
-//   }
-// }
-
-// abstract class _LoadingState implements CharacterPostState {
-//   const factory _LoadingState() = _$_LoadingState;
-// }
-
-// /// @nodoc
-// abstract class _$ErrorStateCopyWith<$Res> {
-//   factory _$ErrorStateCopyWith(
-//           _ErrorState value, $Res Function(_ErrorState) then) =
-//       __$ErrorStateCopyWithImpl<$Res>;
-//   $Res call({String errorMessage});
-// }
-
-// /// @nodoc
-// class __$ErrorStateCopyWithImpl<$Res>
-//     extends _$CharacterPostStateCopyWithImpl<$Res>
-//     implements _$ErrorStateCopyWith<$Res> {
-//   __$ErrorStateCopyWithImpl(
-//       _ErrorState _value, $Res Function(_ErrorState) _then)
-//       : super(_value, (v) => _then(v as _ErrorState));
-
-//   @override
-//   _ErrorState get _value => super._value as _ErrorState;
-
-//   @override
-//   $Res call({
-//     Object errorMessage = freezed,
-//   }) {
-//     return _then(_ErrorState(
-//       errorMessage: errorMessage == freezed
-//           ? _value.errorMessage
-//           : errorMessage as String,
-//     ));
-//   }
-// }
-
-// /// @nodoc
-// class _$_ErrorState implements _ErrorState {
-//   const _$_ErrorState({@required this.errorMessage})
-//       : assert(errorMessage != null);
-
-//   @override
-//   final String errorMessage;
-
-//   @override
-//   String toString() {
-//     return 'CharacterPostState.error(errorMessage: $errorMessage)';
-//   }
-
-//   @override
-//   bool operator ==(dynamic other) {
-//     return identical(this, other) ||
-//         (other is _ErrorState &&
-//             (identical(other.errorMessage, errorMessage) ||
-//                 const DeepCollectionEquality()
-//                     .equals(other.errorMessage, errorMessage)));
-//   }
-
-//   @override
-//   int get hashCode =>
-//       runtimeType.hashCode ^ const DeepCollectionEquality().hash(errorMessage);
-
-//   @JsonKey(ignore: true)
-//   @override
-//   _$ErrorStateCopyWith<_ErrorState> get copyWith =>
-//       __$ErrorStateCopyWithImpl<_ErrorState>(this, _$identity);
-
-//   @override
-//   @optionalTypeArgs
-//   TResult when<TResult extends Object>({
-//     @required TResult initial(),
-//     @required TResult loading(),
-//     @required TResult error(String errorMessage),
-//     @required TResult data(List<Comment> commentList),
-//   }) {
-//     assert(initial != null);
-//     assert(loading != null);
-//     assert(error != null);
-//     assert(data != null);
-//     return error(errorMessage);
-//   }
-
-//   @override
-//   @optionalTypeArgs
-//   TResult maybeWhen<TResult extends Object>({
-//     TResult initial(),
-//     TResult loading(),
-//     TResult error(String errorMessage),
-//     TResult data(List<Comment> commentList),
-//     @required TResult orElse(),
-//   }) {
-//     assert(orElse != null);
-//     if (error != null) {
-//       return error(errorMessage);
-//     }
-//     return orElse();
-//   }
-
-//   @override
-//   @optionalTypeArgs
-//   TResult map<TResult extends Object>({
-//     @required TResult initial(_InitialState value),
-//     @required TResult loading(_LoadingState value),
-//     @required TResult error(_ErrorState value),
-//     @required TResult data(_DataState value),
-//   }) {
-//     assert(initial != null);
-//     assert(loading != null);
-//     assert(error != null);
-//     assert(data != null);
-//     return error(this);
-//   }
-
-//   @override
-//   @optionalTypeArgs
-//   TResult maybeMap<TResult extends Object>({
-//     TResult initial(_InitialState value),
-//     TResult loading(_LoadingState value),
-//     TResult error(_ErrorState value),
-//     TResult data(_DataState value),
-//     @required TResult orElse(),
-//   }) {
-//     assert(orElse != null);
-//     if (error != null) {
-//       return error(this);
-//     }
-//     return orElse();
-//   }
-// }
-
-// abstract class _ErrorState implements CharacterPostState {
-//   const factory _ErrorState({@required String errorMessage}) = _$_ErrorState;
-
-//   String get errorMessage;
-//   @JsonKey(ignore: true)
-//   _$ErrorStateCopyWith<_ErrorState> get copyWith;
-// }
-
-// /// @nodoc
-// abstract class _$DataStateCopyWith<$Res> {
-//   factory _$DataStateCopyWith(
-//           _DataState value, $Res Function(_DataState) then) =
-//       __$DataStateCopyWithImpl<$Res>;
-//   $Res call({List<Comment> commentList});
-// }
-
-// /// @nodoc
-// class __$DataStateCopyWithImpl<$Res>
-//     extends _$CharacterPostStateCopyWithImpl<$Res>
-//     implements _$DataStateCopyWith<$Res> {
-//   __$DataStateCopyWithImpl(_DataState _value, $Res Function(_DataState) _then)
-//       : super(_value, (v) => _then(v as _DataState));
-
-//   @override
-//   _DataState get _value => super._value as _DataState;
-
-//   @override
-//   $Res call({
-//     Object commentList = freezed,
-//   }) {
-//     return _then(_DataState(
-//       commentList: commentList == freezed
-//           ? _value.commentList
-//           : commentList as List<Comment>,
-//     ));
-//   }
-// }
-
-// /// @nodoc
-// class _$_DataState implements _DataState {
-//   const _$_DataState({@required this.commentList})
-//       : assert(commentList != null);
-
-//   @override
-//   final List<Comment> commentList;
-
-//   @override
-//   String toString() {
-//     return 'CharacterPostState.data(commentList: $commentList)';
-//   }
-
-//   @override
-//   bool operator ==(dynamic other) {
-//     return identical(this, other) ||
-//         (other is _DataState &&
-//             (identical(other.commentList, commentList) ||
-//                 const DeepCollectionEquality()
-//                     .equals(other.commentList, commentList)));
-//   }
-
-//   @override
-//   int get hashCode =>
-//       runtimeType.hashCode ^ const DeepCollectionEquality().hash(commentList);
-
-//   @JsonKey(ignore: true)
-//   @override
-//   _$DataStateCopyWith<_DataState> get copyWith =>
-//       __$DataStateCopyWithImpl<_DataState>(this, _$identity);
-
-//   @override
-//   @optionalTypeArgs
-//   TResult when<TResult extends Object>({
-//     @required TResult initial(),
-//     @required TResult loading(),
-//     @required TResult error(String errorMessage),
-//     @required TResult data(List<Comment> commentList),
-//   }) {
-//     assert(initial != null);
-//     assert(loading != null);
-//     assert(error != null);
-//     assert(data != null);
-//     return data(commentList);
-//   }
-
-//   @override
-//   @optionalTypeArgs
-//   TResult maybeWhen<TResult extends Object>({
-//     TResult initial(),
-//     TResult loading(),
-//     TResult error(String errorMessage),
-//     TResult data(List<Comment> commentList),
-//     @required TResult orElse(),
-//   }) {
-//     assert(orElse != null);
-//     if (data != null) {
-//       return data(commentList);
-//     }
-//     return orElse();
-//   }
-
-//   @override
-//   @optionalTypeArgs
-//   TResult map<TResult extends Object>({
-//     @required TResult initial(_InitialState value),
-//     @required TResult loading(_LoadingState value),
-//     @required TResult error(_ErrorState value),
-//     @required TResult data(_DataState value),
-//   }) {
-//     assert(initial != null);
-//     assert(loading != null);
-//     assert(error != null);
-//     assert(data != null);
-//     return data(this);
-//   }
-
-//   @override
-//   @optionalTypeArgs
-//   TResult maybeMap<TResult extends Object>({
-//     TResult initial(_InitialState value),
-//     TResult loading(_LoadingState value),
-//     TResult error(_ErrorState value),
-//     TResult data(_DataState value),
-//     @required TResult orElse(),
-//   }) {
-//     assert(orElse != null);
-//     if (data != null) {
-//       return data(this);
-//     }
-//     return orElse();
-//   }
-// }
-
-// abstract class _DataState implements CharacterPostState {
-//   const factory _DataState({@required List<Comment> commentList}) =
-//       _$_DataState;
-
-//   List<Comment> get commentList;
-//   @JsonKey(ignore: true)
-//   _$DataStateCopyWith<_DataState> get copyWith;
-// }
+// coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+
+part of 'character_post_bloc.dart';
+
+// **************************************************************************
+// FreezedGenerator
+// **************************************************************************
+
+T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
+/// @nodoc
+class _$CharacterPostEventTearOff {
+  const _$CharacterPostEventTearOff();
+
+  _Started started({required int postId}) {
+    return _Started(
+      postId: postId,
+    );
+  }
+
+  _Comment addComment({required Comment comment}) {
+    return _Comment(
+      comment: comment,
+    );
+  }
+}
+
+/// @nodoc
+const $CharacterPostEvent = _$CharacterPostEventTearOff();
+
+/// @nodoc
+mixin _$CharacterPostEvent {
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(int postId) started,
+    required TResult Function(Comment comment) addComment,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(int postId)? started,
+    TResult Function(Comment comment)? addComment,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(int postId)? started,
+    TResult Function(Comment comment)? addComment,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Started value) started,
+    required TResult Function(_Comment value) addComment,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(_Comment value)? addComment,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(_Comment value)? addComment,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $CharacterPostEventCopyWith<$Res> {
+  factory $CharacterPostEventCopyWith(
+          CharacterPostEvent value, $Res Function(CharacterPostEvent) then) =
+      _$CharacterPostEventCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class _$CharacterPostEventCopyWithImpl<$Res>
+    implements $CharacterPostEventCopyWith<$Res> {
+  _$CharacterPostEventCopyWithImpl(this._value, this._then);
+
+  final CharacterPostEvent _value;
+  // ignore: unused_field
+  final $Res Function(CharacterPostEvent) _then;
+}
+
+/// @nodoc
+abstract class _$StartedCopyWith<$Res> {
+  factory _$StartedCopyWith(_Started value, $Res Function(_Started) then) =
+      __$StartedCopyWithImpl<$Res>;
+  $Res call({int postId});
+}
+
+/// @nodoc
+class __$StartedCopyWithImpl<$Res>
+    extends _$CharacterPostEventCopyWithImpl<$Res>
+    implements _$StartedCopyWith<$Res> {
+  __$StartedCopyWithImpl(_Started _value, $Res Function(_Started) _then)
+      : super(_value, (v) => _then(v as _Started));
+
+  @override
+  _Started get _value => super._value as _Started;
+
+  @override
+  $Res call({
+    Object? postId = freezed,
+  }) {
+    return _then(_Started(
+      postId: postId == freezed
+          ? _value.postId
+          : postId // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_Started implements _Started {
+  const _$_Started({required this.postId});
+
+  @override
+  final int postId;
+
+  @override
+  String toString() {
+    return 'CharacterPostEvent.started(postId: $postId)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other is _Started &&
+            (identical(other.postId, postId) ||
+                const DeepCollectionEquality().equals(other.postId, postId)));
+  }
+
+  @override
+  int get hashCode =>
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(postId);
+
+  @JsonKey(ignore: true)
+  @override
+  _$StartedCopyWith<_Started> get copyWith =>
+      __$StartedCopyWithImpl<_Started>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(int postId) started,
+    required TResult Function(Comment comment) addComment,
+  }) {
+    return started(postId);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(int postId)? started,
+    TResult Function(Comment comment)? addComment,
+  }) {
+    return started?.call(postId);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(int postId)? started,
+    TResult Function(Comment comment)? addComment,
+    required TResult orElse(),
+  }) {
+    if (started != null) {
+      return started(postId);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Started value) started,
+    required TResult Function(_Comment value) addComment,
+  }) {
+    return started(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(_Comment value)? addComment,
+  }) {
+    return started?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(_Comment value)? addComment,
+    required TResult orElse(),
+  }) {
+    if (started != null) {
+      return started(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _Started implements CharacterPostEvent {
+  const factory _Started({required int postId}) = _$_Started;
+
+  int get postId => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  _$StartedCopyWith<_Started> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$CommentCopyWith<$Res> {
+  factory _$CommentCopyWith(_Comment value, $Res Function(_Comment) then) =
+      __$CommentCopyWithImpl<$Res>;
+  $Res call({Comment comment});
+}
+
+/// @nodoc
+class __$CommentCopyWithImpl<$Res>
+    extends _$CharacterPostEventCopyWithImpl<$Res>
+    implements _$CommentCopyWith<$Res> {
+  __$CommentCopyWithImpl(_Comment _value, $Res Function(_Comment) _then)
+      : super(_value, (v) => _then(v as _Comment));
+
+  @override
+  _Comment get _value => super._value as _Comment;
+
+  @override
+  $Res call({
+    Object? comment = freezed,
+  }) {
+    return _then(_Comment(
+      comment: comment == freezed
+          ? _value.comment
+          : comment // ignore: cast_nullable_to_non_nullable
+              as Comment,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_Comment implements _Comment {
+  const _$_Comment({required this.comment});
+
+  @override
+  final Comment comment;
+
+  @override
+  String toString() {
+    return 'CharacterPostEvent.addComment(comment: $comment)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other is _Comment &&
+            (identical(other.comment, comment) ||
+                const DeepCollectionEquality().equals(other.comment, comment)));
+  }
+
+  @override
+  int get hashCode =>
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(comment);
+
+  @JsonKey(ignore: true)
+  @override
+  _$CommentCopyWith<_Comment> get copyWith =>
+      __$CommentCopyWithImpl<_Comment>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(int postId) started,
+    required TResult Function(Comment comment) addComment,
+  }) {
+    return addComment(comment);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(int postId)? started,
+    TResult Function(Comment comment)? addComment,
+  }) {
+    return addComment?.call(comment);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(int postId)? started,
+    TResult Function(Comment comment)? addComment,
+    required TResult orElse(),
+  }) {
+    if (addComment != null) {
+      return addComment(comment);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Started value) started,
+    required TResult Function(_Comment value) addComment,
+  }) {
+    return addComment(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(_Comment value)? addComment,
+  }) {
+    return addComment?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(_Comment value)? addComment,
+    required TResult orElse(),
+  }) {
+    if (addComment != null) {
+      return addComment(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _Comment implements CharacterPostEvent {
+  const factory _Comment({required Comment comment}) = _$_Comment;
+
+  Comment get comment => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  _$CommentCopyWith<_Comment> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+class _$CharacterPostStateTearOff {
+  const _$CharacterPostStateTearOff();
+
+  _CharacterPostState call(
+      {required bool isSubmitting,
+      required bool noInternet,
+      required bool isOk,
+      required bool serverError,
+      required List<Comment> comments}) {
+    return _CharacterPostState(
+      isSubmitting: isSubmitting,
+      noInternet: noInternet,
+      isOk: isOk,
+      serverError: serverError,
+      comments: comments,
+    );
+  }
+}
+
+/// @nodoc
+const $CharacterPostState = _$CharacterPostStateTearOff();
+
+/// @nodoc
+mixin _$CharacterPostState {
+  bool get isSubmitting => throw _privateConstructorUsedError;
+  bool get noInternet => throw _privateConstructorUsedError;
+  bool get isOk => throw _privateConstructorUsedError;
+  bool get serverError => throw _privateConstructorUsedError;
+  List<Comment> get comments => throw _privateConstructorUsedError;
+
+  @JsonKey(ignore: true)
+  $CharacterPostStateCopyWith<CharacterPostState> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $CharacterPostStateCopyWith<$Res> {
+  factory $CharacterPostStateCopyWith(
+          CharacterPostState value, $Res Function(CharacterPostState) then) =
+      _$CharacterPostStateCopyWithImpl<$Res>;
+  $Res call(
+      {bool isSubmitting,
+      bool noInternet,
+      bool isOk,
+      bool serverError,
+      List<Comment> comments});
+}
+
+/// @nodoc
+class _$CharacterPostStateCopyWithImpl<$Res>
+    implements $CharacterPostStateCopyWith<$Res> {
+  _$CharacterPostStateCopyWithImpl(this._value, this._then);
+
+  final CharacterPostState _value;
+  // ignore: unused_field
+  final $Res Function(CharacterPostState) _then;
+
+  @override
+  $Res call({
+    Object? isSubmitting = freezed,
+    Object? noInternet = freezed,
+    Object? isOk = freezed,
+    Object? serverError = freezed,
+    Object? comments = freezed,
+  }) {
+    return _then(_value.copyWith(
+      isSubmitting: isSubmitting == freezed
+          ? _value.isSubmitting
+          : isSubmitting // ignore: cast_nullable_to_non_nullable
+              as bool,
+      noInternet: noInternet == freezed
+          ? _value.noInternet
+          : noInternet // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isOk: isOk == freezed
+          ? _value.isOk
+          : isOk // ignore: cast_nullable_to_non_nullable
+              as bool,
+      serverError: serverError == freezed
+          ? _value.serverError
+          : serverError // ignore: cast_nullable_to_non_nullable
+              as bool,
+      comments: comments == freezed
+          ? _value.comments
+          : comments // ignore: cast_nullable_to_non_nullable
+              as List<Comment>,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$CharacterPostStateCopyWith<$Res>
+    implements $CharacterPostStateCopyWith<$Res> {
+  factory _$CharacterPostStateCopyWith(
+          _CharacterPostState value, $Res Function(_CharacterPostState) then) =
+      __$CharacterPostStateCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {bool isSubmitting,
+      bool noInternet,
+      bool isOk,
+      bool serverError,
+      List<Comment> comments});
+}
+
+/// @nodoc
+class __$CharacterPostStateCopyWithImpl<$Res>
+    extends _$CharacterPostStateCopyWithImpl<$Res>
+    implements _$CharacterPostStateCopyWith<$Res> {
+  __$CharacterPostStateCopyWithImpl(
+      _CharacterPostState _value, $Res Function(_CharacterPostState) _then)
+      : super(_value, (v) => _then(v as _CharacterPostState));
+
+  @override
+  _CharacterPostState get _value => super._value as _CharacterPostState;
+
+  @override
+  $Res call({
+    Object? isSubmitting = freezed,
+    Object? noInternet = freezed,
+    Object? isOk = freezed,
+    Object? serverError = freezed,
+    Object? comments = freezed,
+  }) {
+    return _then(_CharacterPostState(
+      isSubmitting: isSubmitting == freezed
+          ? _value.isSubmitting
+          : isSubmitting // ignore: cast_nullable_to_non_nullable
+              as bool,
+      noInternet: noInternet == freezed
+          ? _value.noInternet
+          : noInternet // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isOk: isOk == freezed
+          ? _value.isOk
+          : isOk // ignore: cast_nullable_to_non_nullable
+              as bool,
+      serverError: serverError == freezed
+          ? _value.serverError
+          : serverError // ignore: cast_nullable_to_non_nullable
+              as bool,
+      comments: comments == freezed
+          ? _value.comments
+          : comments // ignore: cast_nullable_to_non_nullable
+              as List<Comment>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_CharacterPostState implements _CharacterPostState {
+  const _$_CharacterPostState(
+      {required this.isSubmitting,
+      required this.noInternet,
+      required this.isOk,
+      required this.serverError,
+      required this.comments});
+
+  @override
+  final bool isSubmitting;
+  @override
+  final bool noInternet;
+  @override
+  final bool isOk;
+  @override
+  final bool serverError;
+  @override
+  final List<Comment> comments;
+
+  @override
+  String toString() {
+    return 'CharacterPostState(isSubmitting: $isSubmitting, noInternet: $noInternet, isOk: $isOk, serverError: $serverError, comments: $comments)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other is _CharacterPostState &&
+            (identical(other.isSubmitting, isSubmitting) ||
+                const DeepCollectionEquality()
+                    .equals(other.isSubmitting, isSubmitting)) &&
+            (identical(other.noInternet, noInternet) ||
+                const DeepCollectionEquality()
+                    .equals(other.noInternet, noInternet)) &&
+            (identical(other.isOk, isOk) ||
+                const DeepCollectionEquality().equals(other.isOk, isOk)) &&
+            (identical(other.serverError, serverError) ||
+                const DeepCollectionEquality()
+                    .equals(other.serverError, serverError)) &&
+            (identical(other.comments, comments) ||
+                const DeepCollectionEquality()
+                    .equals(other.comments, comments)));
+  }
+
+  @override
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(isSubmitting) ^
+      const DeepCollectionEquality().hash(noInternet) ^
+      const DeepCollectionEquality().hash(isOk) ^
+      const DeepCollectionEquality().hash(serverError) ^
+      const DeepCollectionEquality().hash(comments);
+
+  @JsonKey(ignore: true)
+  @override
+  _$CharacterPostStateCopyWith<_CharacterPostState> get copyWith =>
+      __$CharacterPostStateCopyWithImpl<_CharacterPostState>(this, _$identity);
+}
+
+abstract class _CharacterPostState implements CharacterPostState {
+  const factory _CharacterPostState(
+      {required bool isSubmitting,
+      required bool noInternet,
+      required bool isOk,
+      required bool serverError,
+      required List<Comment> comments}) = _$_CharacterPostState;
+
+  @override
+  bool get isSubmitting => throw _privateConstructorUsedError;
+  @override
+  bool get noInternet => throw _privateConstructorUsedError;
+  @override
+  bool get isOk => throw _privateConstructorUsedError;
+  @override
+  bool get serverError => throw _privateConstructorUsedError;
+  @override
+  List<Comment> get comments => throw _privateConstructorUsedError;
+  @override
+  @JsonKey(ignore: true)
+  _$CharacterPostStateCopyWith<_CharacterPostState> get copyWith =>
+      throw _privateConstructorUsedError;
+}

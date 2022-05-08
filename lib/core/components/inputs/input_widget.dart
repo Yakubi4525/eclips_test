@@ -23,7 +23,6 @@ class InputWidget extends StatelessWidget {
       child: SizedBox(
         width: _size.width,
         child: TextFormField(
-          validator: validationFunction(),
           controller: controller,
           decoration: InputDecoration(
             focusedBorder: OutlineInputBorder(

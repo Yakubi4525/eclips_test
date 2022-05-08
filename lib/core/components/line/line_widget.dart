@@ -12,7 +12,7 @@ class LineWidget extends StatelessWidget {
         top: 10,
         bottom: 10,
       ),
-      color: ColorPalette.darkGreyColor,
+      color: ColorPalette.darkGreyColor.withOpacity(0.3),
     );
   }
 }

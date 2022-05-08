@@ -10,6 +10,7 @@ import 'package:user_app/features/user_list/domain/reositories/data_repository.d
 part 'character_user_event.dart';
 part 'character_user_state.dart';
 part 'character_user_bloc.freezed.dart';
+
 @injectable
 class CharacterUserBloc extends Bloc<CharacterUserEvent, CharacterUserState> {
   DataRepository dataRepository;
